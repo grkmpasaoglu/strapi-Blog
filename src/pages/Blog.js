@@ -50,8 +50,8 @@ export default function Blogs() {
       <div className="container mx-auto">
         <div className="flex float-left">
           <div className="ml-auto">
-            <Leftbar/>
-            </div>
+            <Leftbar />
+          </div>
         </div>
         <ul>
           {data &&
@@ -62,7 +62,9 @@ export default function Blogs() {
                   <h2 className="text-4xl text-black font-bold mb-6">
                     {blog.attributes.title}
                   </h2>
-                  <ReactMarkdown className="text-base text-gray-500">{blog.attributes.content}</ReactMarkdown>
+                  <ReactMarkdown className="text-base text-gray-500">
+                    {blog.attributes.body}
+                  </ReactMarkdown>
                 </div>
                 <Sidebar />
               </div>
